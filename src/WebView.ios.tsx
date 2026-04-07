@@ -116,6 +116,7 @@ const WebViewComponent = forwardRef<unknown, IOSWebViewProps>(
             lastErrorEvent,
             onHttpError,
             onLoadingError,
+            onLoadingSubResourceError,
             onLoadingFinish,
             onLoadingProgress,
             onOpenWindow,
@@ -258,6 +259,7 @@ const WebViewComponent = forwardRef<unknown, IOSWebViewProps>(
                 messagingEnabled={typeof onMessageProp === 'function'}
                 messagingModuleName="" // android ONLY
                 onLoadingError={onLoadingError}
+                onLoadingSubResourceError={onLoadingSubResourceError}
                 onLoadingFinish={onLoadingFinish}
                 onLoadingProgress={onLoadingProgress}
                 onFileDownload={onFileDownload}

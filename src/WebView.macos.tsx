@@ -90,6 +90,7 @@ const WebViewComponent = forwardRef<unknown, MacOSWebViewProps>(
             lastErrorEvent,
             onHttpError,
             onLoadingError,
+            onLoadingSubResourceError,
             onLoadingFinish,
             onLoadingProgress,
             onContentProcessDidTerminate,
@@ -219,6 +220,7 @@ const WebViewComponent = forwardRef<unknown, MacOSWebViewProps>(
                 messagingEnabled={typeof onMessageProp === 'function'}
                 newSource={newSource}
                 onLoadingError={onLoadingError}
+                onLoadingSubResourceError={onLoadingSubResourceError}
                 onLoadingFinish={onLoadingFinish}
                 onLoadingProgress={onLoadingProgress}
                 onLoadingStart={onLoadingStart}
